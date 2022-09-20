@@ -38,10 +38,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_modular: ^5.0.3
   flutter_triple: ^1.2.8-dev.1
-  mobx: ^2.0.6+1
   flutter_mobx: ^2.0.4
   fluttertoast: ^8.0.9
-  provider: ^6.0.3
   flutter_launcher_icons: ^0.10.0
   avatar_glow: ^2.0.2
   font_awesome_flutter: ^10.1.0
