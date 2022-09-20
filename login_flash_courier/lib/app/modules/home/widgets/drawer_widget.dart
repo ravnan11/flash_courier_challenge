@@ -28,7 +28,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
               decoration: BoxDecoration(
                 color: Color(0xFF29B6F6),
               ),
-              padding: EdgeInsets.all(30),
+              padding: EdgeInsets.all(25),
               child: Container(
                 child: Row(
                   children: [

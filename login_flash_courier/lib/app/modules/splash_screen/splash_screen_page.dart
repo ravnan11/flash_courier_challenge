@@ -14,7 +14,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
   void initState() {
     super.initState();
     Future.delayed(Duration(milliseconds: 4000)).then((_) {
-      Modular.to.navigate('/authCheck/');
+      Modular.to.navigate('/login/');
     });
   }
 
