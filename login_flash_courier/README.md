@@ -31,6 +31,7 @@ flutter run
 
 ### Passo Extra:
 Faça o download do apk:
+https://drive.google.com/file/d/1qds0rc2Ad96TiKFubofufcatZ60Rhmib/view?usp=sharing
 
 ## Para acesso:
 Usar os seguintes dados para acesso:
