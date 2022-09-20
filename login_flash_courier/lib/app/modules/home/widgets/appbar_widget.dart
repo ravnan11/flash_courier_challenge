@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:login_flash_courier/app/core/image/app_images.dart';
 
 class HomeAppbar extends StatefulWidget {
@@ -36,9 +37,21 @@ class HomeAppbarState extends State<HomeAppbar> {
       actions: [
         Padding(
           padding: EdgeInsets.only(right: 20),
-          child: Icon(
-            Icons.search,
-            color: Colors.white,
+          child: GestureDetector(
+            child: Icon(
+              Icons.search,
+              color: Colors.white,
+            ),
+            onTap: () {
+              Fluttertoast.showToast(
+                msg: "Sem ação no momento",
+                gravity: ToastGravity.CENTER,
+                timeInSecForIosWeb: 4,
+                backgroundColor: Colors.red,
+                textColor: Colors.white,
+                fontSize: 16.0,
+              );
+            },
           ),
         ),
       ],
