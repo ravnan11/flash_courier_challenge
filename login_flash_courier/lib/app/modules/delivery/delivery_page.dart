@@ -12,6 +12,14 @@ class DeliveryPage extends StatefulWidget {
 }
 
 class _DeliveryPageState extends State<DeliveryPage> {
+  List<String> items = [
+    '- Selecione um familiar -',
+    'Pai',
+    'Mãe',
+    'Irmão',
+    'Filho'
+  ];
+  String? selectedItem = '- Selecione um familiar -';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,16 +49,24 @@ class _DeliveryPageState extends State<DeliveryPage> {
                   ),
                 ),
                 SizedBox(height: 15),
-                DropdownButton<String>(
-                  hint: Text('- Selecione um parentesco -'),
-                  items: <String>['Filho', 'Esposa', 'Pai', 'Irmão']
-                      .map((String value) {
-                    return DropdownMenuItem<String>(
-                      value: value,
-                      child: Text(value),
-                    );
-                  }).toList(),
-                  onChanged: (_) {},
+                SizedBox(
+                  width: 200,
+                  child: DropdownButton<String>(
+                    value: selectedItem,
+                    items: items
+                        .map(
+                          (item) => DropdownMenuItem<String>(
+                            value: item,
+                            child: Text(item),
+                          ),
+                        )
+                        .toList(),
+                    onChanged: (item) {
+                      setState(() {
+                        selectedItem = item;
+                      });
+                    },
+                  ),
                 ),
                 SizedBox(height: 30),
                 TextFormField(

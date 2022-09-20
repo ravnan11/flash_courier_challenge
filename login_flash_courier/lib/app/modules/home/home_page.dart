@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                               child: Text(
                                 'Lista',
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  color: Color(0xFFE6B733),
                                   fontSize: 26,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     SizedBox(height: 10),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         GestureDetector(
                           child: Container(
@@ -101,7 +101,7 @@ class _HomePageState extends State<HomePage> {
                                   child: Text(
                                     'Entrega',
                                     style: TextStyle(
-                                      color: Colors.white,
+                                      color: Color(0xFFE6B733),
                                       fontSize: 22,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -136,7 +136,7 @@ class _HomePageState extends State<HomePage> {
                                   child: Text(
                                     'Devolução',
                                     style: TextStyle(
-                                      color: Colors.white,
+                                      color: Color(0xFFE6B733),
                                       fontSize: 22,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -153,7 +153,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     SizedBox(height: 10),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         GestureDetector(
                           child: Container(
@@ -177,7 +177,7 @@ class _HomePageState extends State<HomePage> {
                                   child: Text(
                                     'Coleta',
                                     style: TextStyle(
-                                      color: Colors.white,
+                                      color: Color(0xFFE6B733),
                                       fontSize: 22,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -219,7 +219,7 @@ class _HomePageState extends State<HomePage> {
                                   child: Text(
                                     'Transferir',
                                     style: TextStyle(
-                                      color: Colors.white,
+                                      color: Color(0xFFE6B733),
                                       fontSize: 22,
                                       fontWeight: FontWeight.bold,
                                     ),

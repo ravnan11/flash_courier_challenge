@@ -12,6 +12,8 @@ class DevolutionPage extends StatefulWidget {
 }
 
 class _DevolutionPageState extends State<DevolutionPage> {
+  List<String> items = ['- Selecione um grupo -', 'A', 'B', 'C', 'D'];
+  String? selectedItem = '- Selecione um grupo -';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,15 +43,24 @@ class _DevolutionPageState extends State<DevolutionPage> {
                   ),
                 ),
                 SizedBox(height: 15),
-                DropdownButton<String>(
-                  hint: Text('- Selecione um grupo -'),
-                  items: <String>['A', 'B', 'C', 'D'].map((String value) {
-                    return DropdownMenuItem<String>(
-                      value: value,
-                      child: Text(value),
-                    );
-                  }).toList(),
-                  onChanged: (_) {},
+                SizedBox(
+                  width: 200,
+                  child: DropdownButton<String>(
+                    value: selectedItem,
+                    items: items
+                        .map(
+                          (item) => DropdownMenuItem<String>(
+                            value: item,
+                            child: Text(item),
+                          ),
+                        )
+                        .toList(),
+                    onChanged: (item) {
+                      setState(() {
+                        selectedItem = item;
+                      });
+                    },
+                  ),
                 ),
                 SizedBox(height: 30),
                 TextFormField(

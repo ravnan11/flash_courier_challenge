@@ -1,16 +1,38 @@
-# login_flash_courier
+# Mobile Challenge
 
-A new Flutter project.
+Mobile Challenge, é um "code challenge" oferecido pela Flash Courier. como step de um processo seletivo de Desenvolvedor Flutter.
 
-## Getting Started
+A aplicação tem como responsabilidade disponibilizar o login para uma pagina home.
 
-This project is a starting point for a Flutter application.
+## Stack
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter 3.0.3 (Na versão mais recente disponivel) 
+- Injeção de Dependencia : Modular
+- Gerenciamento de Estado: ChangeNotifier
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Tech Decisions
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+As decisões técnicas utilizadas para o desenvolvimento da aplicação foram de criar uma aplicação que fosse facilmente compreendida, para isso utilizei uma linguagem altamente utilizada na atualidade (Dart) juntamente com o framework(Flutter) e de fácil entendimento. Além disso, utilizei algumas das boas práticas de clean code
+
+## Emulate
+
+A aplicação necessita de um ambiente de desenvolvimento apropriado para rodar com flutter.
+
+Também disponibilizado o apk por meio de link no passo extra.
+
+### Passo 1:
+
+Na pasta login_flash_courier rodar o comando:
+flutter pub get
+
+### Passo 2:
+Rode o comando:
+flutter run
+
+### Passo Extra:
+Faça o download do apk:
+
+## Para acesso:
+Usar os seguintes dados para acesso:
+email : eve.holt@reqres.in
+senha : cityslicka
